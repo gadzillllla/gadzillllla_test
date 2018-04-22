@@ -1,0 +1,69 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 320px;
+    margin: auto auto;
+
+
+}
+textarea {
+    resize: none;
+    border-color: #9b9b9b;
+    border-width: 0 0 2px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+
+img {
+    width: 160px;
+    margin-top: 60px;
+
+}
+
+.logo_group p {
+    font-family: Righteous, sans-serif;
+    font-size: 35px;
+    margin-bottom: 33px;
+
+}
+
+button{
+    height: 40px;
+    color: white;
+    background-color: #36b5c7;
+    border: none;
+    font-size: 20px;
+    margin-top: 37px;
+    width: 44%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.msg p {
+    font-size: 12px;
+    margin: 25px 40px;
+    color: #b5b5b5;
+}
+
+@media screen and (min-width: 500px) {
+    .root{
+        margin-top: 150px;
+
+
+    }

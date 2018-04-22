@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>OBEDER</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="root">
+		<header class="header">
+			<div class="logoGroup" onclick='location.href="index.html"'>
+				<img src="img/logo.png" class="logo_pic">
+				<div class="logo">obeder</div>
+			</div>
+			<div class="switch">
+				<span class="text">Не ем</span>
+				<label class="switch_top">
+					<input class="checkbox_switch" type="checkbox" onclick="hide()" checked>
+					<span class="slider_top"></span>
+				</label>
+				<span class="text">Ем</span>
+			</div>
+		</header>
+
+		<div class="main" id="main" style='display: block'>
+			<div class="day">
+				<h1 class="title" id="tfull"> Понедельник, сегодня 23 апреля </h1>
+				<h1 class="title" id="tmobile"> Понедельник, 23 апреля </h1>
+				<div class="eatings">
+					<section class="food">
+						<h2 class="food_title">Салаты</h2>
+						<div class="food_position">
+							<label class="container">Нежный
+								<input type="radio" name="Mon1">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Грубый
+								<input type="radio" name="Mon1">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Мясо</h2>
+						<div class="food_position">
+							<label class="container">Филе вкусное
+								<input type="radio" name="Mon2">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Филе посредственное
+								<input type="radio" name="Mon2">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Супы</h2>
+						<div class="food_position">
+							<label class="container">Говяжий суп "Ролтон"
+								<input type="radio" name="Mon3">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Вода с картошкой
+								<input type="radio" name="Mon3">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Гарниры</h2>
+						<div class="food_position">
+							<label class="container">Макарохи
+								<input type="radio" name="Mon4">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Манная каша
+								<input type="radio" name="Mon4">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food_disable">
+						<h2 class="food_title">Напитки</h2>
+						<div class="food_position">
+							<label class="container">Чай
+								<input type="radio" name="Mon5" disabled>
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Пивас
+								<input type="radio" name="Mon5" disabled checked>
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="area_and_button">
+						<textarea class="comment"></textarea>
+						<button class="uncheck_button" onclick="uncheck('main')">Сбросить в дефолт!</button>
+					</section>
+				</div>
+			</div>
+
+			<div class="day">
+				<h1 class="title" id="tfull"> Вторник, завтра 24 апреля </h1>
+				<h1 class="title" id="tmobile"> Вторник, 24 апреля </h1>
+				<div class="eatings">
+					<section class="food">
+						<h2 class="food_title">Салаты</h2>
+						<div class="food_position">
+							<label class="container">Нежный
+								<input type="radio" name="Teu1">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Грубый
+								<input type="radio" name="Teu1">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Мясо</h2>
+						<div class="food_position">
+							<label class="container">Филе вкусное
+								<input type="radio" name="Teu2">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Филе посредственное
+								<input type="radio" name="Teu2">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Супы</h2>
+						<div class="food_position">
+							<label class="container">Говяжий суп "Ролтон"
+								<input type="radio" name="Teu3">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Вода с картошкой
+								<input type="radio" name="Teu3">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food_disable">
+						<h2 class="food_title">Гарниры</h2>
+						<div class="food_position">
+							<label class="container">Макарохи
+								<input type="radio" name="Teu4" disabled checked>
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Манная каша
+								<input type="radio" name="Teu4" disabled>
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="food">
+						<h2 class="food_title">Напитки</h2>
+						<div class="food_position">
+							<label class="container">Чай
+								<input type="radio" name="Teu5">
+								<span class="checkmark" />
+							</label>
+						</div>
+						<div class="food_position">
+							<label class="container">Пивас
+								<input type="radio" name="Teu5">
+								<span class="checkmark" />
+							</label>
+						</div>
+					</section>
+					<section class="area_and_button">
+						<textarea class="comment"></textarea>
+						<button class="uncheck_button" onclick="uncheck('main')">Сбросить в дефолт!</button>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
